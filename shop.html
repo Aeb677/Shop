@@ -1,0 +1,1482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title></title>
+  </head>
+  <body>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <div class="container">
+          <div class="row bg-light d-flex justify-content-between">
+            <div class="d-none d-lg-block col-lg-3">
+              <p>telephone:777777777</p>
+            </div>
+            <div class="d-none d-lg-block col-lg-3">
+              <p>welcome to our store</p>
+            </div>
+            <div class="col-6 col-lg-2">
+             <form>
+                <select class="form-control">
+                  <option>$</option>
+                  <option>AMD</option>
+                  <option>€</option>
+                </select>
+             </form>
+            </div>
+            <div class="col-6 col-lg-2">
+              <form>
+                <select class="form-control">
+                  <option>AM</option>
+                  <option>EN</option>
+                  <option>RU</option>
+                </select>
+             </form>
+            </div>
+            <div class="d-none d-lg-block col-lg-2">
+              <button type="button" class="btn btn-info w-100">WishList
+                <span class="badge badge-danger">3</span>
+              </button>
+            </div>
+          </div>
+          <div class="row bg-dark">
+            <div class="col-6 text-white">
+             <h1>Store</h1>
+            </div>
+            <div class="d-none d-lg-block d-lg-flex col-lg-3 m-auto">
+            <div>
+              <form class="form-inline pr-2">
+               <input type="text" class="form-control" name="search"
+               placeholder="search">
+              </form>
+            </div>
+            <div>
+              <button type="sumbit" class="btn btn-success">search</button>
+            </div>
+          </div>
+          <div class="dropdown col-2 m-auto">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              My account
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item"  data-toggle="modal" data-target="#staticBackdrop">login</a>
+              <a class="dropdown-item" href="#">Registration</a>
+              <a class="dropdown-item" href="#">Settings</a>
+            </div>
+          </div>
+         </div>
+          <div class="row">
+<nav class="navbar navbar-expand-lg navbar-light bg-success d-flex justify-content-between col-12">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto col-12">
+      <li class="nav-item dropdown col-2">
+        <div class="dropdown">
+  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Category 1
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item pl-1" href="#">Action</a>
+    <a class="dropdown-item pl-1" href="#">Another action</a>
+    <a class="dropdown-item pl-1" href="#">Something else here</a>
+  </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown col-2">
+        <div class="dropdown pb-1">
+  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Category 2
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item pl-1" href="#">Action</a>
+    <a class="dropdown-item pl-1" href="#">Another action</a>
+    <a class="dropdown-item pl-1" href="#">Something else here</a>
+  </div>
+</div>
+      </li>
+      <li class="nav-item dropdown col-2">
+        <div class="dropdown">
+  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Category 3
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item pl-1" href="#">Action</a>
+    <a class="dropdown-item pl-1" href="#">Another action</a>
+    <a class="dropdown-item pl-1" href="#">Something else here</a>
+  </div>
+</div>
+      </li>
+      <li class="nav-item dropdown col-2">
+        <div class="dropdown">
+  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Category 4
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item pl-1" href="#">Action</a>
+    <a class="dropdown-item pl-1" href="#">Another action</a>
+    <a class="dropdown-item pl-1" href="#">Something else here</a>
+  </div>
+</div>
+      </li>
+      <li class="nav-item dropdown col-2">
+        <div class="dropdown">
+  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Category 5
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item pl-1" href="#">Action</a>
+    <a class="dropdown-item pl-1" href="#">Another action</a>
+    <a class="dropdown-item pl-1" href="#">Something else here</a>
+  </div>
+</div>
+      </li>
+      <li class="nav-item dropdown col-2">
+        <div class="dropdown">
+  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Category 6
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item pl-1" href="#">Action</a>
+    <a class="dropdown-item pl-1" href="#">Another action</a>
+    <a class="dropdown-item pl-1" href="#">Something else here</a>
+  </div>
+</div>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>
+ </div> 
+ <div class="container">
+  <div class="row mt-3">
+  <div class="col-12 col-lg-9">
+   <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Skins</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Skins for AK-47</li>
+  </ol>
+</nav>
+</div>
+<div class="col-12 col-lg-1">
+<p class="mt-2">Soft by</p>
+</div>
+<div class="col-12 col-lg-2">
+<form>
+  <select class="custom-select">
+  <option selected>Select Filters</option>
+  <option value="1">Price:High to Low</option>
+  <option value="2">Price:Low to High</option>
+  <option value="3">A-Z</option>
+</select>
+</form>
+</div>
+</div>
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2 bg-dark">
+      <div class="accordion" id="accordionExample">
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingOne">
+      <h2 class="mb-0">
+        <button class="btn text-dark text-center btn-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Glock-18
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+        <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingTwo">
+      <h2 class="mb-0">
+        <button class="btn text-dark text-center btn-block collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Dual Berettas
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+        <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingThree">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          P250
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+       <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header bg-secondary" id="headingFour">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+         Tec-9
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="card">
+    <div class="card-header bg-secondary" id="headingFive">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+         CZ75-Auto
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      <div class="card">
+    <div class="card-header bg-secondary" id="headingSix">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+         Desert Eagle
+        </button>
+      </h2>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="card">
+    <div class="card-header bg-secondary" id="headingSeven">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+         Revolver-R8
+        </button>
+      </h2>
+    </div>
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="card">
+    <div class="card-header bg-secondary" id="headingEight">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+         Five-seveN
+        </button>
+      </h2>
+    </div>
+    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="card">
+    <div class="card-header bg-secondary" id="headingNine">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+         P2000
+        </button>
+      </h2>
+    </div>
+    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="card">
+    <div class="card-header bg-secondary" id="headingTen">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+         USP-S
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="card">
+    <div class="card-header bg-secondary" id="headingEleven">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+         MAG-7
+        </button>
+      </h2>
+    </div>
+    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="card">
+    <div class="card-header bg-secondary" id="headingTwelve">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+         Nova
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="card">
+    <div class="card-header bg-secondary" id="headingThirteen">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThriteen" aria-expanded="false" aria-controls="collapseThirteen">
+         XM1014
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThirteen" class="collapse" aria-labelledby="headingThirteen" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="card">
+    <div class="card-header bg-secondary" id="headingFourteen">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+         Sawed-Off
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFourteen" class="collapse" aria-labelledby="headingFourteen" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="card">
+    <div class="card-header bg-secondary" id="headingFivefeen">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseFifeteen" aria-expanded="false" aria-controls="collapseFifeteen">
+         MAC-10 
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFifeteen" class="collapse" aria-labelledby="headingFifeteen" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+        <div class="card">
+    <div class="card-header bg-secondary" id="headingSixteen">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+         MP5-SD
+        </button>
+      </h2>
+    </div>
+    <div id="collapseSixteen" class="collapse" aria-labelledby="headingSixteen" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingSeventeen">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+         MP7
+        </button>
+      </h2>
+    </div>
+    <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingEighteen">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+         MP9
+        </button>
+      </h2>
+    </div>
+    <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingNineteen">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+         P90
+        </button>
+      </h2>
+    </div>
+    <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingTwenty">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+         PP-19 Bizon
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingTwentyone">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyone" aria-expanded="false" aria-controls="collapseTwentyone">
+         UMP-45
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwentyone" class="collapse" aria-labelledby="headingTwentyone" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingTwentytwo">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentytwo" aria-expanded="false" aria-controls="collapseTwentytwo">
+        AK-47
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwentytwo" class="collapse" aria-labelledby="headingTwentytwo" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingTwentythree">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentythree" aria-expanded="false" aria-controls="collapseTwentythree">
+         Galil AR
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwentythree" class="collapse" aria-labelledby="headingTwentythree" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingTwentyfour">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyfour" aria-expanded="false" aria-controls="collapseTwentyfour">
+         AUG
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwentyfour" class="collapse" aria-labelledby="headingTwentyfour" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingTwentyfive">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyfive" aria-expanded="false" aria-controls="collapseTwentyfive">
+         FAMAS
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwentyfive" class="collapse" aria-labelledby="headingTwentyfive" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingTwentysix">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentysix" aria-expanded="false" aria-controls="collapseTwentysix">
+         M4A4
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwentysix" class="collapse" aria-labelledby="headingTwentysix" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingTwentyseven">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyseven" aria-expanded="false" aria-controls="collapseTwentyseven">
+          M4A1-S
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwentyseven" class="collapse" aria-labelledby="headingTwentyseven" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingTwentyeight">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentyeight" aria-expanded="false" aria-controls="collapseTwentyeight">
+         SG 553
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwentyeight" class="collapse" aria-labelledby="headingTwentyeight" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingTwentynine">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwentynine" aria-expanded="false" aria-controls="collapseTwentynine">
+         AWP
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwentynine" class="collapse" aria-labelledby="headingTwentynine" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingThirty">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThirty" aria-expanded="false" aria-controls="collapseThirty">
+         G3SG1
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThirty" class="collapse" aria-labelledby="headingThirty" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingThirtyone">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyone" aria-expanded="false" aria-controls="collapseThirtyone">
+         SSG 08
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThirtyone" class="collapse" aria-labelledby="headingThirtyone" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header bg-secondary" id="headingThirtytwo">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtytwo" aria-expanded="false" aria-controls="collapseThirtytwo">
+         SCAR-08
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThirtytwo" class="collapse" aria-labelledby="headingThirtytwo" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header bg-secondary" id="headingThirtythree">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtythree" aria-expanded="false" aria-controls="collapseThirtythree">
+         M249
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThirtythree" class="collapse" aria-labelledby="headingThirtythree" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="card">
+    <div class="card-header bg-secondary" id="headingThirtyfour">
+      <h2 class="mb-0">
+        <button class="btn text-dark btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThirtyfour" aria-expanded="false" aria-controls="collapseThirtyfour">
+         Negev
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThirtyfour" class="collapse" aria-labelledby="headingThirtyfour" data-parent="#accordionExample">
+      <div class="card-body bg-dark">
+      <div class="">
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Factory new</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Minimal Wear</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Field-Tested</a>
+          </div>
+          <div class=" mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Well-Worn</a>
+          </div>
+          <div class="mb-3 bg-warning rounded text-center">
+            <a href="" style="text-decoration: none" class="text-dark">Battle-Scarred</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+      <div class="custom-control custom-switch mt-4">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+        <label class="custom-control-label" for="customSwitch1">StatTrack on</label>
+      </div>
+    </div>
+
+ 
+
+
+
+          <div class="border col-6 col-lg-10 bg-light mx-auto mx-lg-0">
+            <div class=""> 
+                <div class="text-center">
+                  <h2>AK-47 Neon Revolution (Factory New)</h2>
+                </div>
+                <div class="d-lg-flex"> 
+                  <div>
+                    <img src="img/300.png" class="img-fluid">
+                  </div> 
+                  <div>
+                    <p class="mt-3">Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. </p>
+                  </div>
+                  <div class="text-center">
+                    <h1>100$</h1> 
+                    <button class="btn btn-primary"><a href="product.html" class="text-white" style="text-decoration: none">Add To Cart</a></button>
+                </div>
+              </div>
+            </div>
+            <div> 
+                <div class="text-center">
+                  <h2>AK-47 Neon Revolution (Factory New)</h2>
+                </div>
+                <div class="d-lg-flex"> 
+                  <div>
+                    <img src="img/300.png" class="img-fluid">
+                  </div> 
+                  <div>
+                    <p class="mt-3">Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. </p>
+                  </div>
+                  <div class="text-center">
+                    <h1>100$</h1> 
+                    <button class="btn btn-primary"><a href="product.html" class="text-white" style="text-decoration: none">Add To Cart</a></button>
+                </div>
+              </div>
+            </div>
+                        <div class=""> 
+                <div class="text-center">
+                  <h2>AK-47 Neon Revolution (Factory New)</h2>
+                </div>
+                <div class="d-lg-flex"> 
+                  <div>
+                    <img src="img/300.png" class="img-fluid">
+                  </div> 
+                  <div>
+                    <p class="mt-3">Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. </p>
+                  </div>
+                  <div class="text-center">
+                    <h1>100$</h1> 
+                    <button class="btn btn-primary"><a href="product.html" class="text-white" style="text-decoration: none">Add To Cart</a></button>
+                </div>
+              </div>
+            </div>
+            <div> 
+                <div class="text-center">
+                  <h2>AK-47 Neon Revolution (Factory New)</h2>
+                </div>
+                <div class="d-lg-flex"> 
+                  <div>
+                    <img src="img/300.png" class="img-fluid">
+                  </div> 
+                  <div>
+                    <p class="mt-3">Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. </p>
+                  </div>
+                  <div class="text-center">
+                    <h1>100$</h1> 
+                    <button class="btn btn-primary"><a href="product.html" class="text-white" style="text-decoration: none">Add To Cart</a></button>
+                </div>
+              </div>
+            </div>
+                        <div class=""> 
+                <div class="text-center">
+                  <h2>AK-47 Neon Revolution (Factory New)</h2>
+                </div>
+                <div class="d-lg-flex"> 
+                  <div>
+                    <img src="img/300.png" class="img-fluid">
+                  </div> 
+                  <div>
+                    <p class="mt-3">Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. </p>
+                  </div>
+                  <div class="text-center">
+                    <h1>100$</h1> 
+                    <button class="btn btn-primary"><a href="product.html" class="text-white" style="text-decoration: none">Add To Cart</a></button>
+                </div>
+              </div>
+            </div>
+            <div> 
+                <div class="text-center">
+                  <h2>AK-47 Neon Revolution (Factory New)</h2>
+                </div>
+                <div class="d-lg-flex"> 
+                  <div>
+                    <img src="img/300.png" class="img-fluid">
+                  </div> 
+                  <div>
+                    <p class="mt-3">Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. </p>
+                  </div>
+                  <div class="text-center">
+                    <h1>100$</h1> 
+                    <button class="btn btn-primary"><a href="product.html" class="text-white" style="text-decoration: none">Add To Cart</a></button>
+                </div>
+              </div>
+            </div>
+                        <div class=""> 
+                <div class="text-center">
+                  <h2>AK-47 Neon Revolution (Factory New)</h2>
+                </div>
+                <div class="d-lg-flex"> 
+                  <div>
+                    <img src="img/300.png" class="img-fluid">
+                  </div> 
+                  <div>
+                    <p class="mt-3">Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. </p>
+                  </div>
+                  <div class="text-center">
+                    <h1>100$</h1> 
+                    <button class="btn btn-primary"><a href="product.html" class="text-white" style="text-decoration: none">Add To Cart</a></button>
+                </div>
+              </div>
+            </div>
+            <div> 
+                <div class="text-center">
+                  <h2>AK-47 Neon Revolution (Factory New)</h2>
+                </div>
+                <div class="d-lg-flex"> 
+                  <div>
+                    <img src="img/300.png" class="img-fluid">
+                  </div> 
+                  <div>
+                    <p class="mt-3">Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. </p>
+                  </div>
+                  <div class="text-center">
+                    <h1>100$</h1> 
+                    <button class="btn btn-primary"><a href="product.html" class="text-white" style="text-decoration: none">Add To Cart</a></button>
+                </div>
+              </div>
+            </div>
+            <div class=""> 
+                <div class="text-center">
+                  <h2>AK-47 Neon Revolution (Factory New)</h2>
+                </div>
+                <div class="d-lg-flex"> 
+                  <div>
+                    <img src="img/300.png" class="img-fluid">
+                  </div> 
+                  <div>
+                    <p class="mt-3">Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. </p>
+                  </div>
+                  <div class="text-center">
+                    <h1>100$</h1> 
+                    <button class="btn btn-primary"><a href="product.html" class="text-white" style="text-decoration: none">Add To Cart</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+  </div>
+           <div class="container">
+            <div class="row bg-dark d-flex justify-content-between">
+              <div class="col-12 col-lg-3 text-center mt-2">
+                <a href="#" class="text-decoration-none text-warning"><p class="text-uppercase">Contact us</p></a>
+              </div>
+                <div class="col-12 col-lg-3 text-center mt-2">
+               <a href="#" class="text-decoration-none text-warning"><p class="text-uppercase">Live Chat</p></a>
+                </div>
+                <div class="col-12 col-lg-3 text-center mt-2">
+                <a href="#" class="text-decoration-none text-warning"><p class="text-uppercase">Shipping</p></a>
+              </div>  
+               <div class="col-12 col-lg-3 text-center mt-2">
+                <a href="#" class="text-decoration-none text-warning "><p class="text-uppercase">Term&Conditions</p></a>
+              </div>
+            </div>
+            <div class="row bg-warning d-flex justify-content-between">
+              <div class="d-none d-lg-block col-lg-12/5">
+                <a href="#" class="text-decoration-none text-dark text-center"><p class="font-weight-bold m-0">Link group 1</p>
+                  <p class="m-0">link 1</p>
+                  <p class="m-0">link 2</p>
+                  <p class="m-0">link 3</p>
+                </a>
+              </div>
+              <div class="d-none d-lg-block col-lg-12/5">
+                <a href="#" class="text-decoration-none text-dark text-center"><p class="font-weight-bold m-0">Link group 2</p>
+                  <p class="m-0">link 1</p>
+                  <p class="m-0">link 2</p>
+                  <p class="m-0">link 3</p>
+                </a>
+              </div>
+              <div class="d-none d-lg-block col-lg-12/5">
+                <a href="#" class="text-decoration-none text-dark text-center"><p class="font-weight-bold m-0">Link group 3</p>
+                  <p class="m-0">link 1</p>
+                  <p class="m-0">link 2</p>
+                  <p class="m-0">link 3</p>
+                </a>
+              </div>
+              <div class="d-none d-lg-block col-lg-12/5">
+                <a href="#" class="text-decoration-none text-dark text-center"><p class="font-weight-bold m-0">Link group 4</p>
+                  <p class="m-0">link 1</p>
+                  <p class="m-0">link 2</p>
+                  <p class="m-0">link 3</p>
+                </a>
+              </div><div class="d-none d-lg-block col-lg-12/5">
+                <a href="#" class="text-decoration-none text-dark text-center"><p class="font-weight-bold m-0">Link group 5</p>
+                  <p class="m-0">link 1</p>
+                  <p class="m-0">link 2</p>
+                  <p class="m-0">link 3</p>
+                </a>
+              </div>
+            </div>
+            <div class="row bg-light">
+              <div class="mt-auto d-none d-lg-block">
+                <p class="text-dark">Find us on:</p>
+              </div> 
+                <div class="ml-2 d-flex justify-content-start">
+                  <div>
+                   <a href="" class="ml-3"><img src="https://image.flaticon.com/icons/svg/174/174855.svg" style="width: 25px"></a>
+                  </div>
+                  <div>
+                   <a href="" class="ml-3"><img src="https://image.flaticon.com/icons/svg/174/174848.svg" style="width:25px"></a>
+                  </div>
+                  <div>
+                   <a href="" class="ml-3"><img src="https://image.flaticon.com/icons/svg/174/174883.svg" style="width:25px"></a>
+                  </div>
+                  <div>
+                    <a href="" class="ml-3"><img src="https://image.flaticon.com/icons/svg/145/145812.svg" style="width: 25px"></a> 
+                  </div>
+                 </div>
+                 <div class="ml-lg-auto text-center"><p>©Tumo Center For Creative Technologies</p></div>
+            </div>
+          </div>
+  </body>
+</html>
