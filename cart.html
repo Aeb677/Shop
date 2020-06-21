@@ -11,34 +11,6 @@
     <title>Hello, world!</title>
   </head>
   <body>
-<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <button type="submit" class="btn btn-primary">Login</button>
-</form>
-      </div>
-      <div class="modal-footer">
-      </div>
-    </div>
-  </div>
-</div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -97,9 +69,9 @@
               My account
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item"  data-toggle="modal" data-target="#staticBackdrop">login</a>
-              <a class="dropdown-item" href="#">Registration</a>
-              <a class="dropdown-item" href="#">Settings</a>
+              <a class="dropdown-item"  data-toggle="modal" data-target="#loginModal">login</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#registrationModal">Registration</a>
+              <a class="dropdown-item" href="Settings.html">Account Settings</a>
             </div>
           </div>
          </div>
@@ -186,210 +158,47 @@
   </div>
 </nav>
 </div>
- </div>
- <div class="container">
-     <div class="row mt-3">
-  <div class="col-12 col-lg-9">
-   <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Home</a></li>
-    <li class="breadcrumb-item"><a href="#">Skins</a></li>
-    <li class="breadcrumb-item"><a href="shop.html">Skins for AK-47</a></li>
-    <li class="breadcrumb-item active" aria-current="page">AK-47 Neon Revolution</li>
-  </ol>
-</nav>
-</div>
-<div class="col-12 col-lg-1">
-<p class="mt-2">Soft by</p>
-</div>
-<div class="col-12 col-lg-2">
-<form>
-  <select class="custom-select">
-  <option selected>Select Filters</option>
-  <option value="1">Price:High to Low</option>
-  <option value="2">Price:Low to High</option>
-  <option value="3">A-Z</option>
-</select>
-</form>
-</div>
-</div>
-<div class="row">
-  <div class="col-12 text-left">
-    <h1>AK-47 Neon Revolution</h1>
-  </div>
-  <div class="col-6 d-flex">
-    <div class="d-none d-lg-block">
-      <div class="mb-3">
-        <img src="img/gun2.png" class="border" style="width: 150px">
-      </div>
-      <div class="mb-2">
-        <img src="img/gun3.jpg" class="border" style="width: 150px">
-      </div>
-      <div class="">
-        <img src="img/gun4.jpeg" class="border" style="width: 150px">
-      </div>
-    </div>
-    <div class="mx-auto mx-lg-0">
-      <img src="img/gun5.jpg" style="height: 307px" class="img-fluid">
-    </div>
-  </div>
-  <div class="col-12 col-lg-6 mx-auto mx-lg-0">
-    <div>
-      <h1>175$</h1>
-    </div>
-    <div>
-      <form>
-        <div class="form-group">
+ </div> 
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center bg-light">
+          <h1>Cart</h1>
+          <table class="table table-light">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Image</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><img src="img/the empress.png" class="img-fluid"></td>
+      <td>AK-47 The Empress (Factory New)</td>
+      <td>120$</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td><img src="img/m4a4.png" class="img-fluid"></td>
+      <td>M4A4 The Emperor (Factory New)</td>
+      <td>165$</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td><img src="img/ssg 08.png" class="img-fluid"></td>
+      <td>SSG 08 Fever Dream (Field-Tested)</td>
+      <td>1.2$</td>
+    </tr>
+  </tbody>
+</table>
 
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">Quantity</span>
-            </div>
-            <div style="width: 150px">
-              <input type="text" class="form-control rounded-right" required>
-            </div>
-          </div>
+<button type="button" class="btn btn-secondary"><a href="PaymentMethod.html" class="text-light" style="text-decoration: none">Checkout</a></button>
         </div>
-      </form>
+      </div>
     </div>
-    <div class="">
-     <h6>Option</h6>
-     <div>
-       <div class="custom-control custom-switch">
-  <input type="checkbox" class="custom-control-input" id="customSwitch1">
-  <label class="custom-control-label" for="customSwitch1">StatTrack on</label>
-</div>
-     </div>  
-     <h6>Quality</h6>
-     <div class="d-flex">
-
-     <div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios1">
-    Factory new
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios1">
-  Minimal wear
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios1">
-    Field-Tested
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios1">
-   Well-Worn
-  </label>
-</div>
-<div class="form-check">
-  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-  <label class="form-check-label" for="exampleRadios1">
-   Battle-Scarred
-  </label>
-</div>
-</div>
-    </div>
-  </div>
-</div>
-<div class="row">
-  <div class="d-none d-lg-block col-12">
-    <a href="#" class="mr-2">Overwiew</a>
-    <a href="#" class="mr-2">Rating</a>
-    <a href="#" class="mr-2">Link</a>
-  </div>
-  <div class="border rounded">
-    <h5 class="ml-3 mt-3">About product</h5>
-    <p class="ml-3">Powerful and reliable, the AK-47 is one of the most popular assault rifles in the world. It is most deadly in short, controlled bursts of fire. It has been given an eclectic mix of hydrographic decals then drip painted. No suicide squad would be complete without It</p>
-  </div>
-        <div class="row">
-          <h1 class="col-12 text-center">You May Also Like</h1>
-          <div class="d-lg-flex justify-content-lg-between mx-auto mx-lg-0">
-            <div class="row">
-            <div class="card border img-fluid col-12 col-md-6 col-lg-2">             
-                  <img src="img/awpdragonlore.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">AWP Dragon Lore</h5>
-                    <p class="card-text text-danger">$199.99</p>
-                    <p class="card-text text-primary" style="text-decoration:line-through">$350.00</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                <div class="card border img-fluid col-12 col-md-6 col-lg-2">             
-                  <img src="img/m4a4.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">M4A4 The Emperor</h5>
-                    <p class="card-text text-danger">$199.99</p>
-                    <p class="card-text text-primary" style="text-decoration:line-through">$350.00</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                <div class="card border img-fluid col-12 col-md-6 col-lg-2">             
-                  <img src="img/the empress.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">AK-47 The Empress</h5>
-                    <p class="card-text text-danger">$199.99</p>
-                    <p class="card-text text-primary" style="text-decoration:line-through">$350.00</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                <div class="card border img-fluid col-12 col-md-6 col-lg-2">             
-                  <img src="img/m4a1.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">M4A1-S Chantico's Fire</h5>
-                    <p class="card-text text-danger">$199.99</p>
-                    <p class="card-text text-primary" style="text-decoration:line-through">$350.00</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                <div class="card border img-fluid col-12 col-md-6 col-lg-2">             
-                  <img src="img/ssg 08.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">SSG 08 Fever Dream</h5>
-                    <p class="card-text text-danger">$199.99</p>
-                    <p class="card-text text-primary" style="text-decoration:line-through">$350.00</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-                <div class="card border img-fluid col-12 col-md-6 col-lg-2">             
-                  <img src="img/medusa.png" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">AWP <br> Medusa </h5>
-                    <p class="card-text text-danger">$199.99</p>
-                    <p class="card-text text-primary" style="text-decoration:line-through">$350.00</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-          </div>
-        </div>
-        </div> 
-</div>
-<div class="row">
-          <div class="col-12 d-flex justify-content-center">
-            <nav aria-label="...">
-              <ul class="pagination">
-                <li class="page-item disabled">
-                  <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                  <a class="page-link" href="#">Next</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
- </div>
-           <div class="container">
+              <div class="container">
             <div class="row bg-dark d-flex justify-content-between">
               <div class="col-12 col-lg-3 text-center mt-2">
                 <a href="#" class="text-decoration-none text-warning"><p class="text-uppercase">Contact us</p></a>
