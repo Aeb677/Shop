@@ -11,11 +11,11 @@
     <title>Hello, world!</title>
   </head>
   <body>
-<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="loginModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+        <h5 class="modal-title" id="loginModal">Login</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -40,6 +40,37 @@
   </div>
 </div>
 
+<div class="modal fade" id="registrationModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="registrationModal">Registration</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1"> 
+          </div>
+          <div class="form-group">
+             <label for="exampleInputPassword1">Password</label>
+             <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="form-group">
+            <label>Username</label>
+            <input type="text" class="form-control" name="Username">
+          </div>
+           <button type="submit" class="btn btn-primary">Register</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -79,7 +110,7 @@
           </div>
           <div class="row bg-dark">
             <div class="col-6 text-white">
-             <h1>Store</h1>
+             <h1><a href="index.html" style="text-decoration: none" class="text-white">Store</a></h1>
             </div>
             <div class="d-none d-lg-block d-lg-flex col-lg-3 m-auto">
             <div>
@@ -97,8 +128,8 @@
               My account
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item"  data-toggle="modal" data-target="#staticBackdrop">login</a>
-              <a class="dropdown-item" href="#">Registration</a>
+              <a class="dropdown-item"  data-toggle="modal" data-target="#loginModal">login</a>
+              <a class="dropdown-item" data-toggle="modal" data-target="#registrationModal">Registration</a>
               <a class="dropdown-item" href="#">Settings</a>
             </div>
           </div>
@@ -294,8 +325,12 @@
   </label>
 </div>
 </div>
+<div class="mt-4">
+<button class="btn btn-success "><a href="cart.html" class="text-white" style="text-decoration: none">Buy</a></button>
+</div>
     </div>
   </div>
+
 </div>
 <div class="row">
   <div class="d-none d-lg-block col-12">
@@ -330,7 +365,7 @@
                   </div>
                 </div>
                 <div class="card border img-fluid col-12 col-md-6 col-lg-2">             
-                  <img src="img/the empress.png" class="card-img-top" alt="...">
+                  <img src="img/AK-47.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">AK-47 The Empress</h5>
                     <p class="card-text text-danger">$199.99</p>
